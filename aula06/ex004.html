@@ -4,10 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font: normal 28pt verdana;
+        }
+    </style>
 </head>
 <body>
     <script>
-        
+        var n1 = Number(window.prompt('Digite seu salário: '))
+        document.write(`seu salário é ${n1.toLocaleString('pt-br', {style: 'currency', currency: 'eur'})}`)
     </script>
 </body>
 </html>
